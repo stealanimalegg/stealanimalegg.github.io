@@ -1,0 +1,227 @@
+{
+  "enabled": true,
+  "slug": "",
+  "pageType": "home",
+  "title": "Steal Animal Egg Wiki, Codes & Beginner Guide",
+  "description": "Steal Animal Egg wiki with current codes, beginner tips, animal references, tier and value guides, plus the official Roblox game link.",
+  "navVisible": true,
+  "hero": {
+    "eyebrow": "Roblox game guide",
+    "heading": "Steal Animal Egg Wiki",
+    "lead": "Steal Animal Egg by Sillytung Studios is a Roblox game about taking eggs from animals, hatching pets, earning from pets, eating food, and stealing from other players.",
+    "supportingText": "This wiki covers the Sillytung Studios experience, place ID 99679692310083. Start with the codes or first-session guide, then compare the pets you hatch.",
+    "primaryLink": {
+      "label": "Latest Codes",
+      "slug": "codes"
+    },
+    "secondaryLink": {
+      "label": "Play on Roblox",
+      "url": "https://www.roblox.com/games/99679692310083/Steal-Animal-Egg"
+    }
+  },
+  "screenshots": [],
+  "lastReviewed": "2026-10-08",
+  "sections": [
+    {
+      "id": "what-is",
+      "heading": "What Is Steal Animal Egg?",
+      "paragraphs": [
+        "Steal Animal Egg combines egg collecting with a growing pet collection. The basic idea is easy to follow: take an egg, hatch it, and earn from the pet you receive. Food and stealing from other players are also part of the game. Different egg sizes and mutations give you more details to pay attention to as you learn the loop.",
+        "This Steal Animal Egg wiki is an independent guide for the Roblox experience made by Sillytung Studios. Use the Play on Roblox button above to reach that game directly. Similar titles can appear in search results, so check the creator before following a code list or a gameplay guide. Matching the game matters more than matching a familiar-looking title.",
+        "You do not need to memorize every animal or chase the most impressive-looking egg before starting. A useful first goal is to complete the egg-to-pet loop and understand the information the game shows you. Once you can repeat that comfortably, you can make better choices about which targets to try and which earnings to compare."
+      ]
+    },
+    {
+      "id": "start-here",
+      "heading": "Start Here",
+      "paragraphs": [
+        "Choose the page that matches what you want to do in your next session. Codes are for quick rewards; the beginner guide walks through your first steps. The stealing guide focuses on completing an attempt, while the animal, tier, and value pages help you interpret your collection. Each reference has a different job, so you can move between them without reading the whole wiki."
+      ],
+      "links": [
+        {
+          "slug": "codes",
+          "label": "Codes",
+          "description": "See the current reward codes, the expired list, and the Shop redemption steps."
+        },
+        {
+          "slug": "beginner-guide",
+          "label": "Beginner Guide",
+          "description": "Follow a first-session plan from choosing an egg to comparing your first pets."
+        },
+        {
+          "slug": "how-to-steal-eggs",
+          "label": "How to Steal Eggs",
+          "description": "Prepare a return route and distinguish animal eggs from player stealing."
+        },
+        {
+          "slug": "all-animals",
+          "label": "All Animals",
+          "description": "See Cat and Geek Cat’s official public labels, plus the pet details to compare in your collection."
+        },
+        {
+          "slug": "tier-list",
+          "label": "Tier List",
+          "description": "Use the public income anchors and an editorial S–D guide to choose your next priority."
+        },
+        {
+          "slug": "value-list",
+          "label": "Value List",
+          "description": "Compare the two official income examples and the current value of your exact pet variant."
+        }
+      ]
+    },
+    {
+      "id": "latest-codes",
+      "heading": "Latest Steal Animal Egg Codes",
+      "paragraphs": [
+        "The current code snapshot is below. Rewards include a Cash Potion, a Fanxys Egg, and income rewards. Codes can expire after updates, so open the full codes page for redemption instructions and troubleshooting before relying on an older list. The expired list stays visible there to help explain a failed entry.",
+        "Copy a code exactly as displayed and check the response in the game. A reward code is a helpful extra, but learning to take eggs and hatch pets remains the foundation of your progress. If a code fails, check the spelling and the game identity before repeatedly trying it."
+      ],
+      "codeStatus": "working",
+      "links": [
+        {
+          "slug": "codes",
+          "label": "Open the full codes and rewards list",
+          "description": "Find the code box, check expired entries, and troubleshoot a failed redemption."
+        }
+      ]
+    },
+    {
+      "id": "gameplay",
+      "heading": "How Steal Animal Egg Gameplay Works",
+      "paragraphs": [],
+      "subsections": [
+        {
+          "heading": "Take eggs from animals",
+          "paragraphs": [
+            "Taking eggs from animals is the starting point of the official game loop. Look at the interaction prompt shown in your own session rather than assuming a button from another device. Choose an egg you can reach and plan what you will do after taking it. A clear return plan is more useful than committing to an unfamiliar target just because it looks appealing."
+          ]
+        },
+        {
+          "heading": "Hatch eggs to collect pets",
+          "paragraphs": [
+            "Hatching turns egg collection into pet collection. Follow the instructions at the appropriate area in your session and complete the process before heading out again. Read the resulting pet name and any displayed details. There is no need to assume a fixed hatch duration, guaranteed animal, or universal set of odds when the live game can show you the next action."
+          ]
+        },
+        {
+          "heading": "Earn from pets",
+          "paragraphs": [
+            "Pets provide earnings. The practical comparison is the number shown for your own pet and the basis on which it is measured. Check whether a display refers to one pet or your total collection before comparing it with another screen. A number copied without its label can lead to a poor choice even when the number itself is correct."
+          ]
+        },
+        {
+          "heading": "Eat food",
+          "paragraphs": [
+            "Eating food is part of Steal Animal Egg. Read the item description and the current interaction prompt before using food, then check what changes in your session. Use each food’s own description to understand its effect. If you are deciding how to spend earnings, use the displayed information and keep your immediate progression goal in mind."
+          ]
+        },
+        {
+          "heading": "Steal from other players",
+          "paragraphs": [
+            "The game also includes stealing from other players. Treat this as a separate situation from taking eggs from animals: another player can change what happens while you are planning. Learn your usual return route first, watch the current situation, and use the stealing guide when you want a more deliberate approach to an attempt."
+          ]
+        },
+        {
+          "heading": "Discover egg sizes and mutations",
+          "paragraphs": [
+            "The official description highlights egg sizes and mutations. Notice those details while collecting and compare the resulting pet information after hatching. Keep size and variant labels alongside the displayed earnings so you can match the entry to the pet in your collection."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guides",
+      "heading": "Steal Animal Egg Guides and References",
+      "paragraphs": [
+        "The beginner progression guide gives you a manageable order of tasks. It helps when you have just joined and do not yet know which screen or action deserves your attention. The stealing guide takes a narrower view: choose a reachable target, know the way back, follow the live prompt, and finish the attempt before assessing the result.",
+        "The three collection references answer different questions. All Animals explains what you are looking at. The Tier List helps decide what to prioritize. The Value List explains how to compare displayed earnings. Start with identification when a pet is unfamiliar, then move to comparison when you have two or more options in front of you."
+      ],
+      "links": [
+        {
+          "slug": "beginner-guide",
+          "label": "Plan your first Steal Animal Egg session",
+          "description": "Get a clear order for codes, eggs, hatching, earnings, and food."
+        },
+        {
+          "slug": "how-to-steal-eggs",
+          "label": "Improve your next stealing attempt",
+          "description": "Work through preparation, the return route, and what to check after delivery."
+        }
+      ]
+    },
+    {
+      "id": "collection",
+      "heading": "Animals, Income, Sizes and Mutations",
+      "paragraphs": [
+        "Animal names, income, sizes, and mutations are central to understanding a collection. Keep the name separate from the other details: two pets that look similar may still show different information. Record the exact label you see rather than shortening it into a category that might mix several entries together.",
+        "For progression decisions, compare earnings under similar conditions and read the units. Use rarity and appearance as additional context when the game displays them. They should not replace the earning figure or create a guaranteed multiplier. Your own collection is the most relevant starting point because it reflects the pets and variants available to you right now."
+      ],
+      "links": [
+        {
+          "slug": "all-animals",
+          "label": "Read the animal and pet reference",
+          "description": "See Cat and Geek Cat’s official public labels, plus the pet details to compare in your collection."
+        },
+        {
+          "slug": "tier-list",
+          "label": "Choose which animals to prioritize",
+          "description": "Use the public income anchors and an editorial S–D guide to choose your next priority."
+        },
+        {
+          "slug": "value-list",
+          "label": "Compare current pet income",
+          "description": "Compare the two official income examples and the current value of your exact pet variant."
+        }
+      ]
+    },
+    {
+      "id": "stealing",
+      "heading": "How to Steal Eggs",
+      "paragraphs": [
+        "Before taking an egg, identify the route back to the area where you can complete the hatch loop. Choose a manageable target and use the prompt shown by the game. Taking the egg is one part of the attempt; getting it back and completing the next action is what connects the attempt to your collection.",
+        "Taking eggs from animals and stealing from players are both described by the creator, but they are not interchangeable instructions. For player stealing, inspect the live situation rather than assuming fixed locks, timers, or defenses. If an attempt goes badly, identify the part that failed and adjust one decision on the next run."
+      ],
+      "links": [
+        {
+          "slug": "how-to-steal-eggs",
+          "label": "Read the egg-stealing walkthrough",
+          "description": "Follow a practical checklist before committing to a target."
+        }
+      ]
+    },
+    {
+      "id": "correct-game",
+      "heading": "Make Sure You Have the Correct Roblox Game",
+      "paragraphs": [
+        "This fan-made guide covers Steal Animal Egg by Sillytung Studios. The official Roblox experience is the identity anchor for every page here. Open it from the Play on Roblox action and check the creator name before redeeming a code or applying a tip.",
+        "When returning from a search result, check the game first and the page date second. A guide for a similarly named Roblox experience can describe different menus, rewards, or animals. An older guide for the correct experience may also show a menu that has changed. Use the current in-game instructions to connect the explanation to what you see."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is Steal Animal Egg?",
+      "answer": "It is a Roblox game by Sillytung Studios where you take eggs from animals, hatch pets, earn from them, eat food, and steal from other players. This wiki helps you learn that loop and compare your collection."
+    },
+    {
+      "question": "Who made Steal Animal Egg?",
+      "answer": "Sillytung Studios is the creator of the Roblox experience covered here. Check that creator name on the official game page when you open the experience."
+    },
+    {
+      "question": "Where can I play Steal Animal Egg?",
+      "answer": "Use the Play on Roblox button at the top of this page to open the official experience. Roblox handles joining the game on your device."
+    },
+    {
+      "question": "Does Steal Animal Egg have codes?",
+      "answer": "Yes. The snapshot above lists the current rewards, and the Codes page includes the full working and expired lists with redemption steps. Codes can expire after updates."
+    },
+    {
+      "question": "What should a beginner do first?",
+      "answer": "Confirm the game, check the latest codes, and complete a manageable egg-to-pet loop. Read your pet information before choosing the next target. The Beginner Guide walks through this order."
+    },
+    {
+      "question": "Where can I find animal tier and value information?",
+      "answer": "Open All Animals for collection details, Tier List for editorial priorities, and Value List for income comparison. Use the links in Start Here to reach each reference."
+    }
+  ]
+}

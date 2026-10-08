@@ -1,0 +1,27 @@
+# Dependencies and generated build output
+node_modules/
+/.next/
+/out/
+/next-env.d.ts
+*.tsbuildinfo
+
+# Local environment files (keep the shared example)
+.env*
+!.env.example
+
+# Packaging and local QA artifacts
+/release/
+/output/
+/.playwright-cli/
+/BUILD-REPORT.md
+/coverage/
+/.cache/
+
+# Editor and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local logs
+*.log

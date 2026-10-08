@@ -1,0 +1,30 @@
+{
+  "lastUpdated": "2026-10-08",
+  "entries": [
+    {
+      "code": "HASHTAGS",
+      "reward": "x5 Cash Potion",
+      "status": "working"
+    },
+    {
+      "code": "1MVISITS",
+      "reward": "1 Fanxys Egg",
+      "status": "working"
+    },
+    {
+      "code": "ENDGAME",
+      "reward": "10 minutes of income",
+      "status": "working"
+    },
+    {
+      "code": "DEMONIC",
+      "reward": "10 minutes of income",
+      "status": "working"
+    },
+    {
+      "code": "RANDOMBAT",
+      "reward": "Random Bait",
+      "status": "expired"
+    }
+  ]
+}
