@@ -140,8 +140,36 @@ checks(locations.length===7 && expectedSlugs.every(s=>locations.includes(url(s))
 const robots=read(join(output,'robots.txt'));
 checks(site.readyForLaunch ? robots.includes('Allow: /') && !robots.includes('Disallow: /') : robots.includes('Disallow: /'), 'Robots does not match launch state.');
 checks(site.hosting.siteUrl===origin, 'The locked domain changed.');
-checks(read('content/generated/integrations.json').includes('G-Y2WWS8HF0V'), 'GA4 configuration is missing.');
-checks([...walk(join(output,'_next')).filter(f=>f.endsWith('.js')), join(output,'index.html')].some(f=>read(f).includes('G-Y2WWS8HF0V')), 'GA4 is missing from the built JavaScript.');
+const gaMeasurementId = JSON.parse(read('content/generated/integrations.json')).gaMeasurementId;
+checks(gaMeasurementId === 'G-Y2WWS8HF0V', 'GA4 measurement ID must remain G-Y2WWS8HF0V.');
+const scriptTags = html => [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]
+  .map(m => ({ attributes: attrs(`<script ${m[1]}>`), content: m[2] }));
+const gaLoaders = scripts => scripts.filter(s => /^https:\/\/www\.googletagmanager\.com\/gtag\/js(?:\?|$)/.test(s.attributes.src || ''));
+const gaConfigs = scripts => scripts.flatMap(s => {
+  if (s.attributes.src || (s.attributes.type && !/^(?:module|(?:text|application)\/javascript)$/i.test(s.attributes.type))) return [];
+  // Framework transport scripts contain serialized markup, not a second execution.
+  if (/^\s*self\.__next_f\.push\(/.test(s.content)) return [];
+  return [...s.content.matchAll(/\bgtag\s*\(\s*(['"])config\1\s*,\s*(['"])([^'"]+)\2/g)].map(m => m[3]);
+});
+const gaPages = walk(output).filter(f => f.endsWith('.html'));
+for (const file of gaPages) {
+  const html = read(file);
+  const label = relativeOutput(file);
+  const head = html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i)?.[1] || '';
+  const headScripts = scriptTags(head);
+  const headLoaders = gaLoaders(headScripts);
+  const headConfigs = gaConfigs(headScripts);
+  checks(headLoaders.length === 1 && new URL(headLoaders[0].attributes.src).searchParams.get('id') === gaMeasurementId,
+    `${label}: GA ownership verification requires one gtag.js loader with the configured ID in the initial HTML <head>.`);
+  checks(headConfigs.length === 1 && headConfigs[0] === gaMeasurementId,
+    `${label}: GA ownership verification requires exactly one matching gtag('config') call in the initial HTML <head>.`);
+  const allScripts = scriptTags(html);
+  checks(gaLoaders(allScripts).length === 1 && gaConfigs(allScripts).length === 1,
+    `${label}: duplicate or missing GA runtime loader/config initialization (including the body).`);
+}
+function relativeOutput(file) { return file.slice(output.length + 1); }
+checks(gaPages.includes(join(output,'index.html')), 'GA ownership verification requires out/index.html.');
+console.log(`GA ownership: initial HTML <head> and single runtime initialization checked on ${gaPages.length} exported pages.`);
 const manifest=JSON.parse(read(join(output,'manifest.webmanifest'))||'{}');
 checks(manifest.icons?.every(i=>i.type==='image/webp' && existsSync(join(output,i.src))), 'Manifest icon is invalid.');
 checks(existsSync(join(output,site.assets.openGraph)), 'OG image does not exist.');
