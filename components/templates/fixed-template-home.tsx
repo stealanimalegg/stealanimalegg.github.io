@@ -1,4 +1,5 @@
 import { NativeAdSlot } from "@/components/integrations/native-ad-slot";
+import { ResponsiveBanner } from "@/components/integrations/responsive-banner";
 import { JsonLd } from "@/components/site/json-ld";
 import { siteConfig } from "@/config/site";
 import type { HomePageDefinition } from "@/config/types";
@@ -11,6 +12,7 @@ export function FixedTemplateHome({ home }: { home: HomePageDefinition }) {
     <div className="guide-actions"><a href={routePath("codes")}>Latest Codes</a><a href={routePath("beginner-guide")}>Beginner Guide</a><a href={siteConfig.game.officialUrl!} target="_blank" rel="noopener noreferrer">Play on Roblox ↗</a></div><GuideDate date={home.lastReviewed} /></div>
     {/* eslint-disable-next-line @next/next/no-img-element */}
     <img className="guide-cover" src={assetPath(siteConfig.assets.cover)} alt="Steal Animal Egg banner showing a Roblox character carrying an egg" width="768" height="432" /></div>
-    <div className="guide-content-grid"><GuideToc sections={home.sections} faq={!!home.faq.length} /><article className="guide-article"><GuideSections sections={home.sections} /><GuideScreenshots items={home.screenshots} /><GuideFaq items={home.faq} /><NativeAdSlot /></article></div>
+    <ResponsiveBanner />
+    <div className="guide-content-grid"><GuideToc sections={home.sections} faq={!!home.faq.length} /><article className="guide-article"><GuideSections sections={home.sections.slice(0, 1)} /><NativeAdSlot /><GuideSections sections={home.sections.slice(1)} /><GuideScreenshots items={home.screenshots} /><GuideFaq items={home.faq} /></article></div>
   </main></>;
 }

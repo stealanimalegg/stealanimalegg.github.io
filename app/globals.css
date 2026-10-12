@@ -144,7 +144,20 @@ html[data-header-style="border"] .site-nav-link {
   border-radius: 0;
 }
 
-[data-native-ad-slot]:empty { display: none; }
+.ad-slot { width: 100%; max-width: 100%; min-width: 0; }
+.ad-label { display: block; text-align: center; font-size: 10px; line-height: 18px; color: #bdb499; }
+.ad-slot--banner { position: relative; text-align: center; margin-block: 16px; min-height: 68px; }
+.ad-slot--banner > iframe { position: absolute; top: 18px; left: 50%; display: block; width: var(--ad-width, 320px); height: var(--ad-height, 50px); max-width: none; border: 0; transform: translateX(-50%) scale(var(--ad-scale, 1)); transform-origin: top center; }
+.ad-slot--native { height: 0; overflow: hidden; }
+.ad-slot--native[data-ad-state="filled"] { height: auto; overflow: visible; margin-block: 20px; }
+.ad-slot--banner[data-ad-state="empty"] { height: 0; min-height: 0; margin-block: 0; overflow: hidden; }
+@media (min-width: 768px) {
+  .ad-slot--banner { min-height: 108px; }
+  .ad-slot--banner[data-ad-device="mobile"] { display: none; }
+}
+@media (max-width: 767px) {
+  .ad-slot--banner[data-ad-device="desktop"] { display: none; }
+}
 
 /* Wiki skin — denser editorial layout. Unprefixed rules above stay portal defaults. */
 html[data-skin="wiki"] .site-container {
